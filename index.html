@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños My Soul</title>
+    <style>
+        body {
+            background-color: #ffe4e1;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+        }
+        .title {
+            font-size: 3em;
+            color: #ff1493;
+            margin: 20px;
+        }
+        .balloons {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: url('balloons.png') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff1493;
+            font-size: 1.5em;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin: 20px;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        .card-container {
+            background-color: #fff;
+            border: 2px solid #ff1493;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .photos-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons"></div>
+    <h1 class="title">Feliz cumpleaños My Soul</h1>
+    <div class="nav">
+        <a href="#video">Video</a>
+        <a href="#card">Carta</a>
+        <a href="#photos">Fotos</a>
+    </div>
+
+    <div id="video" class="content video-container">
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <p>Eres el amor de mi vida</p>
+    </div>
+
+    <div id="card" class="content card-container">
+        <h2>Carta de Feliz Cumpleaños</h2>
+        <p>Querida My Soul,</p>
+        <p>En este día tan especial quiero decirte cuánto significas para mí. Eres una persona increíble y cada día a tu lado es una bendición. Que este nuevo año de vida te traiga mucho amor, felicidad y éxitos. Feliz cumpleaños, te amo con todo mi corazón.</p>
+        <p>Con amor,</p>
+        <p>Tu persona especial</p>
+    </div>
+
+    <div id="photos" class="content photos-container">
+        <h2>Fotos</h2>
+        <img src="foto1.jpg" alt="Foto 1">
+        <img src="foto2.jpg" alt="Foto 2">
+        <img src="foto3.jpg" alt="Foto 3">
+    </div>
+</body>
+</html>
